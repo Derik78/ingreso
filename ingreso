@@ -91,13 +91,6 @@
             margin-top: 14px;
             margin-bottom: 30px;
         }
-        footer {
-      position: sticky;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-
         .footer{
             font-size: var(--sm);
             color: var(--dark);
