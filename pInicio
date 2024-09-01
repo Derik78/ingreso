@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px; 
+}
+        body{
+            margin: 0;
+            font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: #f9daff;
+  background: radial-gradient(circle, #f9daff, #ba95b2); /* Gradiente radial desde el centro */
+  background: linear-gradient(circle, #f9daff, #ba95b2 );
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 24px;
+
+    /*sirve para alinear al centro todo, align-content sirve para alinear verticalmente y justify-content horizontalmente*/
+    place-content: center;
+}
+.person-card{
+    width: 240px;
+}
+.person-img{
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    /*Para que la imagen se vea mejor, no estirada ni alargada*/
+    object-fit: cover;
+}
+.person-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.person-info figure{
+    margin: 0;
+}
+.imgX{
+    width: 35px;
+    height: 35px;
+}
+.imgCorazon{
+    width: 35px;
+    height: 35px;
+}
+.person-info div p:nth-child(1){
+    font-size: var(--md);
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 4px;
+
+}
+.person-info div p:nth-child(2){
+    font-size: var(--sm);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: grey;
+
+}
+
+
+@media(max-width: 640px){
+    .cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+}
+.person-card{
+    width: 140px;
+}
+.person-img{
+    width: 140px;
+    height: 140px;
+}
+}
+     </style>
+
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <img src="https://media.gq.com.mx/photos/61780a08f865d472dfcd66c8/master/w_2560%2Cc_limit/GettyImages-1225777369.jpg" alt="" class="person-img">
+                <div class="person-info">
+                    <div>
+                    <p>Andres</p>
+                    <p>Bogotá</p>
+                    </div>
+
+                <figure>
+                    <img src="https://e7.pngegg.com/pngimages/49/443/png-clipart-x-mark-x-button-wrong-close-button-icon.png" alt="" class="imgX">
+                    <img src="https://png.pngtree.com/png-vector/20210202/ourmid/pngtree-love-heart-icon-png-image_2881492.png" alt="" class="imgCorazon">
+                </figure>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
